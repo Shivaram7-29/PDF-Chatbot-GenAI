@@ -1,21 +1,27 @@
 # PDF Chatbot (GenAI)
 
-A GenAI-powered PDF chatbot built using:
-- LangChain
-- Streamlit
-- FAISS
-- HuggingFace Embeddings
-- OpenRouter LLM
+A Retrieval-Augmented Generation (RAG) based PDF chatbot built using LangChain, FAISS, HuggingFace embeddings, and Streamlit.
 
 ## Features
-- Ask questions from PDF
-- RAG pipeline
-- Streamlit UI
+
+- Ask questions from PDF documents
+- Retrieval-Augmented Generation (RAG)
+- FAISS vector database
+- Streamlit web interface
+- OpenRouter LLM integration
+
+## Tech Stack
+
+- Python
+- LangChain
+- FAISS
+- Streamlit
+- HuggingFace Embeddings
+- OpenRouter API
 
 ## Run Locally
 
 pip install -r requirements.txt
-
 streamlit run app.py
 
 ## Live Demo
