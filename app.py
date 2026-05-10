@@ -27,8 +27,9 @@ chunks = splitter.split_documents(docs)
 # ------------------ EMBEDDINGS (FREE - HUGGINGFACE) ------------------
 from langchain_huggingface import HuggingFaceEmbeddings
 
-embeddings = HuggingFaceEmbeddings()
-
+embeddings = HuggingFaceEmbeddings(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 
 # ------------------ VECTOR STORE ------------------
 from langchain_community.vectorstores import FAISS
